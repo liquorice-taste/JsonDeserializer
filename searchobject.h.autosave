@@ -1,0 +1,21 @@
+#ifndef SEARCHOBJECT_H
+#define SEARCHOBJECT_H
+
+#include <QObject>
+#include <QMap>
+
+class Searchobject : public QObject
+{
+    Q_OBJECT
+private:
+    QMap<QString, QString> metadata; 
+    QList<QMap<QString, QString>> results;
+public:
+    explicit Searchobject(QObject *parent = nullptr);
+
+signals:
+
+public slots:
+};
+
+#endif // SEARCHOBJECT_H
